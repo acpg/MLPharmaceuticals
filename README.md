@@ -9,6 +9,15 @@ Data Cleaning
 clean_payments.R
 Takes CMS payment data and aggregates the payments per doctor per year and saves them in a new file called “payments_CMS.csv”
 
+Merge_Demo_Census.R
+This script merges the Doctor NPI and Census Data 
+Input:
+-Demographics data (QUO-126342-ILW1JV.txt)
+-Census data (Raw Data/Census_Data.csv)
+Output
+- Demo-Census data (Clean Data/demoCensus.csv)
+
+
 clean_drs.R
 This script merges all the doctor data.
 Input:
@@ -22,4 +31,13 @@ Input:
 - doc_cities_200k.csv Doctor distance to major city
 Output:
 NPI_CMS_Chen_dist_doctors.csv
+
+BinaryModels.py
+This script train the models for binary classification. It also output the models
+with the best hyper parameters. Finally, it computes different predictive performance metrics.
+Input:NPI_CMS_AMA_dist_doctors.csv
+Output: Models and Metrics.
+
+
+
 
